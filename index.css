@@ -18,6 +18,13 @@ body {
 
 .img-container {
     position: relative;
+    /* border: 5px solid red; */
+
+    margin: 0 1em;
+}
+.dog-image {
+    width: 100%;
+    border-radius: 15px;
 }
 
 .p1,
@@ -44,7 +51,7 @@ body {
 
 header {
     display: flex;
-    height: 100px;
+    height: 150px;
     justify-content: space-between;
     grid-area: header;
 }
