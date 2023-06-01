@@ -1,0 +1,91 @@
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    height: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header";
+}
+
+.img-container {
+    position: relative;
+}
+
+.p1,
+.p2 {
+    position: absolute;
+    color: white;
+    margin-left: 12px;
+    line-height: 150%;
+}
+
+.p1 {
+    bottom: 55px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.p2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    bottom: 17px;
+    color: #B7B7B7;
+}
+
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+header img {
+    padding: 1.25rem 2rem;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+
+.ellipse {
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    /* background-color: pink; */
+    margin: 0 1em;
+    border-radius: 50%;
+}
+
+footer .heart {
+    width: 41px;
+    height: 36px;
+    padding: 1.75em;
+
+}
+
+footer .reject {
+    width: 26px;
+    height: 26px;
+    padding: 2em;
+}
+
+.ellipse:hover {
+    /* background-color:#cbf3f0; */
+    background-color: #fde2e4;
+}
