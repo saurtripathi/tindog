@@ -9,7 +9,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 550px;
     height: 900px;
     margin: 0 auto;
     display: grid;
