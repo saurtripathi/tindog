@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    max-width: 900px;
     width: 100%;
     height: 900px;
     margin: 0 auto;
@@ -69,16 +70,24 @@ footer {
 }
 
 
-.ellipse {
+.ellipse1,.ellipse2 {
     width: 92px;
     height: 92px;
     background-color: white;
-    /* background-color: pink; */
     margin: 0 1em;
     border-radius: 50%;
 }
 
-footer .heart {
+.ellipse1:hover {
+    background-color:#FFE7EF;
+
+}
+
+.ellipse2:hover {
+    background-color: #DBFFF4;
+}
+
+footer .accept {
     width: 41px;
     height: 36px;
     padding: 1.75em;
@@ -92,6 +101,19 @@ footer .reject {
 }
 
 .ellipse:hover {
-    /* background-color:#cbf3f0; */
     background-color: #fde2e4;
+}
+
+.rec {
+    top: 45px;
+    left: 15px;
+    position: absolute;
+    display: flex;
+    transform: rotate(-35deg);
+}
+
+.like,.dislike {
+    width: 173px;
+    height: 90px;
+    margin: auto;
 }
