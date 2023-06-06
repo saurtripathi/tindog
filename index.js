@@ -54,8 +54,10 @@ function swipeVertically() {
     let touchendY = 0
 
     function checkDirection() {
-        if (touchendY < touchstartY) alert('swiped up!')
-        if (touchendY > touchstartY) alert('swiped down!')
+        if (touchendY < touchstartY) {
+            document.getElementById('dog-desc').innerHTML = getNewDog().getDogHtml()
+        }
+        // if (touchendY > touchstartY) alert('swiped down!')
     }
 
     document.addEventListener('touchstart', e => {
