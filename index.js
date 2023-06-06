@@ -10,38 +10,47 @@ const rejectBtn = document.getElementById('reject')
 const dogObj = new Dog(data[0])
 
 function render() {
-    document.getElementById('dog-desc').innerHTML = getNewDog().getDogHtml()
-    swipeVertically()
+    let dog = getNewDog()
+    let { name, avatar, age, bio, hasBeenSwiped, hasBeenLiked } = dog.getDogData()
+    document.getElementById('dog-desc').innerHTML = dog.getDogHtml()
+    addBadge()
+    if(hasBeenSwiped){
+        swipeVertically()
+    }else {
+        swipeVertically()
+    }
 }
 
-function getNewDog(){
+function getNewDog() {
     const nextDog = data.shift()
     return nextDog ? new Dog(nextDog) : {}
 }
 
 
+function addBadge() {
+    document.onclick = e => {
+        let btnClicked = e.target.id
+        if (btnClicked === 'accept') {
+            hasBeenLiked = true
+            hasBeenSwiped = true
+            document.getElementById('dog-desc').innerHTML = ""
+            document.getElementById('dog-desc').innerHTML = dogObj.getDogHtml()
+            document.getElementById('dog-desc').innerHTML += dogObj.getLikeBadgeHtml()
+        } else if (btnClicked === 'reject' && hasBeenLiked) {
+            hasBeenLiked = false
+            hasBeenSwiped = true
+            document.getElementById('dog-desc').innerHTML = ""
+            document.getElementById('dog-desc').innerHTML = dogObj.getDogHtml()
+            document.getElementById('dog-desc').innerHTML += dogObj.getNopeBadgeHtml()
+        } else if (btnClicked === 'reject' && !hasBeenLiked) {
+            hasBeenSwiped = true
+            document.getElementById('dog-desc').innerHTML += dogObj.getNopeBadgeHtml()
+        }
+
+    }
+}
 
 
-    //     document.onclick = e => {
-    //     let btnClicked = e.target.id
-    //     if(btnClicked === 'accept'){
-    //         hasBeenLiked = true
-    //         hasBeenSwiped = true
-    //         document.getElementById('dog-desc').innerHTML = ""
-    //         document.getElementById('dog-desc').innerHTML = dogObj.getDogHtml()
-    //         document.getElementById('dog-desc').innerHTML  += dogObj.getLikeBadgeHtml()                                                   
-    //     }else if (btnClicked === 'reject' && hasBeenLiked){
-    //         hasBeenLiked = false
-    //         hasBeenSwiped = true
-    //         document.getElementById('dog-desc').innerHTML = ""
-    //         document.getElementById('dog-desc').innerHTML = dogObj.getDogHtml()
-    //         document.getElementById('dog-desc').innerHTML  += dogObj.getNopeBadgeHtml()                                                  
-    //     }else if (btnClicked === 'reject' && !hasBeenLiked) {
-    //         hasBeenSwiped = true
-    //         document.getElementById('dog-desc').innerHTML  += dogObj.getNopeBadgeHtml()
-    //     }
-    
-    // } 
 
 
 
