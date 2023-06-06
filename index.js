@@ -54,8 +54,8 @@ function swipeVertically() {
     let touchendY = 0
 
     function checkDirection() {
-        if (touchendY < touchstartY) alert('swiped DOWN!')
-        if (touchendY > touchstartY) alert('swiped UP!')
+        if (touchendY < touchstartY) alert('swiped up!')
+        if (touchendY > touchstartY) alert('swiped down!')
     }
 
     document.addEventListener('touchstart', e => {
