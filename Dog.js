@@ -25,14 +25,14 @@ class Dog {
     getLikeBadgeHtml(){
         return `
                                 <div class="rec">
-                                <img src="images/badge-like.png" class="like" />  
+                                <img src="images/badge-like.png" class="like" id="like" />  
                                 </div>              
                             `
     }
 
     getNopeBadgeHtml(){
         return `<div class="rec">
-                <img src="images/badge-nope.png" class="dislike" />  
+                <img src="images/badge-nope.png" class="dislike" id="dislike" />  
                 </div>                                                                 
                 `
     }
