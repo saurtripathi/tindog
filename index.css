@@ -22,6 +22,7 @@ body {
     /* border: 5px solid red; */
 
     margin: 2em 1em;
+    display: flex;
 }
 .dog-image {
     width: 100%;
@@ -75,10 +76,11 @@ footer {
 .ellipse1,.ellipse2 {
     width: 125px;
     height: 125px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: yellow;
     margin: 0 1em;
     border-radius: 50%;
-    display: flex;
+    display: table;
 }
 
 .ellipse1:hover {
@@ -91,17 +93,22 @@ footer {
 }
 
  .accept {
-    width: 41px;
+    width: 41px; 
     height: 36px;
     padding: 2.25em;
-    justify-content: center;
-    
+    /* /* justify-content: center; */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .reject {
     width: 26px;
     height: 26px;
     padding: 2.25em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .ellipse:hover {
