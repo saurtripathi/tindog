@@ -77,14 +77,14 @@ body {
 
 header {
     display: flex;
-    height: 150px;
+    height: 100px;
     justify-content: space-between;
     grid-area: header;
     /* padding-top: 2em; */
 }
 
 header img {
-    padding: 3em 1.5em;
+    padding: 1.5em;
 }
 
 
@@ -92,8 +92,8 @@ header img {
 footer {
     display: flex;
     justify-content: center;
-    padding: 4em 0;
-    
+    padding: 1em 0;
+    gap: 1.25em;
 }
 
 
@@ -105,7 +105,12 @@ footer {
     border-radius: 50%;
     display: flex;
 }
-
+.ellipse1 {
+    margin-right: 0;
+}
+.ellipse2 {
+    margin-left: 0;
+}
 .ellipse1:hover {
     background-color:#FFE7EF;
 }
