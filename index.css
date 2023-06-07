@@ -80,7 +80,7 @@ footer {
     background-color: yellow;
     margin: 0 1em;
     border-radius: 50%;
-    display: table;
+    display: flex;
 }
 
 .ellipse1:hover {
@@ -95,20 +95,15 @@ footer {
  .accept {
     width: 41px; 
     height: 36px;
-    padding: 2.25em;
-    /* /* justify-content: center; */
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    /* padding: 2.25em; */
+    margin: auto;
 }
 
 .reject {
     width: 26px;
     height: 26px;
-    padding: 2.25em;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    /* padding: 2.25em; */
+    margin: auto;
 }
 
 .ellipse:hover {
