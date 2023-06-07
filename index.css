@@ -19,49 +19,72 @@ body {
 .img-container {
     position: relative;
     display: flex;
-    padding-top: 2em;
+    /* padding-top: 2em; */
+    margin: 0 1.5em;
 }
 .dog-image {
     width: 100%;
     border-radius: 15px;
+    
 }
 
-.p1,
+/* .p1,
 .p2 {
     position: absolute;
     color: white;
     margin-left: 12px;
     line-height: 150%;
+} */
+
+.pdiv {
+    position: absolute;
+    color: white;
+    margin-left: 12px;
+    line-height: 150%;
+    bottom: 15px;
+    /* border: 1px solid red; */
 }
 
 .p1 {
-    bottom: 55px;
-    font-size: 2.5rem;
+    /* bottom: 70px; */
+    font-size: 1.25rem;
     font-weight: 600;
-    margin-left: 0.5em;
-    margin-bottom: 1em;
+    /* margin-left: 0 0 0 0.5em; */
+    margin: 0;
+    /* margin-bottom: 1em; */
+    /* margin-bottom: 0.25em; */
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .p2 {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    bottom: 17px;
+    /* bottom: 45px; */
     color: #B7B7B7;
-    margin-left: 1em;
-    margin-bottom: 1em;
+    /* margin-left: 1em; */
+    /* margin-bottom: 1em; */
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 0.5em;
+
 }
 
+.pdiv {
+    display: flex;
+    flex-direction: column;
+}
 
 header {
     display: flex;
     height: 150px;
     justify-content: space-between;
     grid-area: header;
-    padding-top: 2em;
+    /* padding-top: 2em; */
 }
 
 header img {
-    padding: 2em 1.5em;
+    padding: 3em 1.5em;
 }
 
 
@@ -69,14 +92,14 @@ header img {
 footer {
     display: flex;
     justify-content: center;
-    padding: 5em 0;
-    gap: 1em;
+    padding: 4em 0;
+    
 }
 
 
 .ellipse1,.ellipse2 {
-    width: 125px;
-    height: 125px;
+    width: 70px;
+    height: 70px;
     background-color: white;
     margin: 0 1em;
     border-radius: 50%;
@@ -108,15 +131,15 @@ footer {
 }
 
 .rec {
-    top: 125px;
-    left: 25px;
+    top: 60px;
+    left: 15px;
     position: absolute;
     display: flex;
     transform: rotate(-35deg);
 }
 
 .like,.dislike {
-    width: 250px;
-    height: 110px;
+    width: 220px;
+    height: 100px;
     margin: auto;
 }

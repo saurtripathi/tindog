@@ -16,8 +16,8 @@ class Dog {
 
         return `
                         <img class="dog-image" src="${avatar}" id=${name} />
-                        <p class="p1">${name}, ${age}</p>
-                        <p class="p2">${bio}</p>
+                        <div class="pdiv" ><p class="p1">${name}, ${age}</p>
+                        <p class="p2">${bio}</p></div>
 
                  `
     }
