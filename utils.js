@@ -29,6 +29,10 @@ function addBadge(dog) {
                     dog = getNewDog()
                     if (Object.keys(dog).length !== 0) {
                         document.getElementById('dog-desc').innerHTML = dog.getDogHtml()
+                    }else {
+                        setTimeout(() => {
+                            location.replace(location.href);
+                        }, 2000);
                     }
                 }
 

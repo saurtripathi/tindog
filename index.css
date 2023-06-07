@@ -4,11 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-
 }
 
 .container {
-    max-width: 900px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -19,22 +18,12 @@ body {
 .img-container {
     position: relative;
     display: flex;
-    /* padding-top: 2em; */
     margin: 0 1.5em;
 }
 .dog-image {
     width: 100%;
     border-radius: 15px;
-    
 }
-
-/* .p1,
-.p2 {
-    position: absolute;
-    color: white;
-    margin-left: 12px;
-    line-height: 150%;
-} */
 
 .pdiv {
     position: absolute;
@@ -42,17 +31,12 @@ body {
     margin-left: 12px;
     line-height: 150%;
     bottom: 15px;
-    /* border: 1px solid red; */
 }
 
 .p1 {
-    /* bottom: 70px; */
     font-size: 1.25rem;
     font-weight: 600;
-    /* margin-left: 0 0 0 0.5em; */
     margin: 0;
-    /* margin-bottom: 1em; */
-    /* margin-bottom: 0.25em; */
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -60,14 +44,10 @@ body {
 .p2 {
     font-size: 0.75rem;
     font-weight: 400;
-    /* bottom: 45px; */
     color: #B7B7B7;
-    /* margin-left: 1em; */
-    /* margin-bottom: 1em; */
     margin: 0;
     padding-left: 1em;
     padding-right: 0.5em;
-
 }
 
 .pdiv {
@@ -80,7 +60,6 @@ header {
     height: 100px;
     justify-content: space-between;
     grid-area: header;
-    /* padding-top: 2em; */
 }
 
 header img {
@@ -147,4 +126,35 @@ footer {
     width: 220px;
     height: 100px;
     margin: auto;
+}
+
+@media(min-width:576px){
+
+    header {
+        width: 80%;
+    }
+    
+    header img {
+        padding: 1.25em;
+    }
+
+    .dog-image {
+        width: 80%;
+        border-radius: 15px;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    .pdiv {
+        width: 80%;
+    }
+
+    .p1 {
+        font-size: 1.5rem;
+    }
+    .p2 {
+        font-size: 1rem;
+    }
 }

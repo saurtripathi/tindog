@@ -10,7 +10,6 @@ function render() {
     let dog = getNewDog()
     document.getElementById('dog-desc').innerHTML = dog.getDogHtml()
     addBadge(dog)
-    swipeVertically()
 }
 
 render()
